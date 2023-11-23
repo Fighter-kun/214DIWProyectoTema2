@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-4-1
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 16/10/2023
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-4-1</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        p, div {
+            width: 200px;
+        }
+
+        li {
+            width: 160px;
+        }
+
+        .uno p, .cuatro p, .cinco p, .seis p{
+            width: 200px;
+            height: 32px;
+            background-color: gray;
+        }
+
+        .uno p:first-child {
+            background-color: blue;
+        }
+
+        .uno p:last-child {
+            background-color: #804000;
+        }
+
+        .dos li:nth-child(-3n+5){
+            background-color: red;
+        }
+
+        .dos li:nth-last-child(3){
+            background-color: rgb(229, 148, 148);
+        }
+
+        .tres p:only-child {
+            background-color: greenyellow;
+        }
+
+        .cuatro p:first-of-type {
+            background-color: aquamarine;
+        }
+
+        .cuatro div:last-of-type {
+            background-color: yellow;
+        }
+
+        .cinco p:nth-of-type(2) {
+            background-color: mediumblue;
+            color: white;
+        }
+
+        .cinco :nth-last-child(3) {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        .seis :only-of-type {
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="uno">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <div class="dos">
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+        </ul>
+    </div>
+    <div class="tres">
+        <p>Single Paragraph</p>
+    </div>
+    <div class="cuatro">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two</p>
+        <strong>Text in strong</strong>
+        <div>This is a div</div>
+        <p>Paragraph three</p>
+    </div>
+    <div class="cinco">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two</p>
+        <strong>Text in strong</strong>
+        <div>This is a div</div>
+        <p>Paragraph three</p>
+    </div>
+    <div class="seis">
+        <p>Paragraph one</p>
+        <span>text in span</span>
+        <p>Paragraph two2</p>
+        <p>Paragraph three</p>
+    </div>
+</body>
+</html>

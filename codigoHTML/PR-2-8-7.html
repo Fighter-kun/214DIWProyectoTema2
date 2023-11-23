@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-8-7
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 13/11/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-2-8-7</title>
+    <style>
+      * {
+        --ff:Verdana, sans-serif;
+            box-sizing: border-box;
+            font-family: var(--ff);
+            margin: 0;
+            padding: 0;
+      }
+      body{
+            margin: 0;
+        }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(images/fondoAmazon.PNG);
+      }
+      nav {
+        width: 100%;
+        height: 120px;
+        position: relative;
+      }
+      header {
+        height: 70px;
+        background-color: #131921;
+      }
+      menu {
+        height: 60px;
+        background-color: #232f3e;
+        margin: 0;
+        padding-top: 5px;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+      input {
+        display: none;
+      }
+      label img:hover {
+        outline: 2px solid white;
+      }
+      ul {
+        width: 364px;
+        height: 100vh;
+        padding: 0;
+        margin-top: 0;
+        list-style: none;
+        overflow: scroll;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+      }
+      li {
+        width: 100%;
+        height: 48px;
+      }
+      .hola {
+        display: block;
+        width: 100%;
+        height: 48px;
+        background-color: #232f3e;
+        color: white;
+      }
+      label {
+        cursor: pointer;
+      }
+      a, span {
+        display: block;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        padding-left: 10px;
+        color: #353535;
+        text-decoration: none;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+      a:hover {
+        background-color: #ccc;
+      }
+      span {
+        font-weight: bold;
+      }
+      ul.mp {
+        left: -100%;
+        transition: all 0.5s ease-in-out;
+      }
+      ul.mapv {
+        left: 100%;
+        top: 48px;
+        transition: all 0.5s ease-in-out;
+      }
+      #open:checked ~ .mp {
+        left: 0;
+      }
+      #open:checked ~ #lbclose {
+        display: block;
+        visibility: visible;
+        opacity: 0.7;
+      }
+      #lbclose {
+        display: block;
+        width: 75vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 360px;
+        background-color: #07090C;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out;
+      }
+      #lbclose::before {
+        content: "X";
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        top: 15px;
+        left: 95px;
+      }
+      #openApv:checked ~ .mp .mapv {
+        z-index: 5;
+        left: 0;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+            <header>Amazon.es</header>
+            <menu>
+                <input type="radio" name="br" id="open">
+                <label for="open"><img src="images/hbgr.PNG"></label>
+                <input type="radio" name="br" id="close">
+                <input type="radio" name="apv" id="openApv">
+                <input type="radio" name="apv" id="closeApv" checked>
+                <ul class="mp">
+                    <span class="hola">Hola, identificate</span>
+                    <span>Tendencias</span>
+                    <li><a href="#">Los mas vendidos</a></li>
+                    <li><a href="#">Ultimas novedades</a></li>
+                    <li><a href="#">Productos del momento</a></li>
+                    <span>Contenido y Dispositivos Dig.</span>
+                    <li><a href="#">
+                        <label for="openApv">Amazon Prime Video</label>
+                    </a></li>
+                    <li><a href="#">Amazon Music</a></li>
+                    <li><a href="#">Amazon Photos</a></li>
+                    <li><a href="#">Echo y Alexa</a></li>
+                    <ul class="mapv">
+                        <li><a href="#">
+                            <label for="closeApv">MENU PRINCIPAL</label>
+                        </a></li>
+                        <span>Amazon Prime Video</span>
+                        <li><a href="#">Todos los videos </a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Mi espacio</a></li>
+                    </ul>
+                </ul>
+                <label for="close" id="lbclose"></label>
+            </menu>
+         
+        </nav>
+    </div>
+</body>
+</html>

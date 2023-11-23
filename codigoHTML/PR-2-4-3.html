@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-4-3
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 16/10/2023
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-4-3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+        ul li {
+            width: 120px;
+            height: 48px;
+            display: inline-block;
+            margin-right: 40px;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            font-size: 1.2rem;
+            font-family: Impact;
+            color: black; 
+            text-align: center;
+            line-height: 48px;
+        }
+        li:nth-of-type(1) a{
+            background-color: deeppink;
+            color: white;
+        }
+        li:nth-of-type(2) a{
+            background-color: rosybrown;
+        }
+        li:nth-of-type(3) a{
+            background-color: orangered;
+        }
+        article {
+            height: auto;
+            padding-bottom: 40px;
+        }
+        article:nth-of-type(1){
+            background-color: #bbb;
+            color: white;
+        }
+        article:nth-of-type(2){
+            background-color: orange;
+        }
+        article:nth-of-type(3){
+            background-color: cyan;
+        }
+        article:target{
+            font-family: 'Courier New', Courier, monospace;
+            color: yellow;
+        }
+        article > a {
+            display: block;
+            width: 120px;
+            height: 32px;
+            background-color: green;
+            color: white;
+            font-family: Impact;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <span id="inicio"></span>
+    <ul>
+        <li><a href="#uno">Primero</a></li>
+        <li><a href="#dos">Segundo</a></li>
+        <li><a href="#tres">Tercero</a></li>
+    </ul>
+    <article id="uno">
+        <h2>Articulo UNO</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsum tempore maxime necessitatibus. Velit aut architecto unde ex nobis magni sit dolorum perspiciatis amet ullam officiis in placeat, sint obcaecati?</p>
+        <a href="#inicio">Volver</a>
+    </article>
+    <article id="dos">
+        <h2>Articulo DOS</h2>
+        <p>Sed, aut exercitationem. Quo consectetur repellat voluptatem dolor ad, temporibus iste saepe exercitationem architecto, culpa incidunt beatae obcaecati nemo, non assumenda quasi quod! Sed ducimus debitis quasi ut maxime iste.</p>
+        <a href="#inicio">Volver</a>
+    </article>
+    <article id="tres">
+        <h2>Articulo TRES</h2>
+        <p>Officiis consectetur voluptatem ratione, ea tempore dignissimos deserunt saepe porro quae aperiam? Repellendus aspernatur sunt nobis perspiciatis nam suscipit cumque necessitatibus ut excepturi eaque architecto mollitia accusamus, odio maiores neque.</p>
+        <a href="#inicio">Volver</a>
+    </article>
+</body>
+</html>

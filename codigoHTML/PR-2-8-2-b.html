@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-8-2-b
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 31/10/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-2-8-2-b</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: bold;
+      }
+      nav {
+        width: 70vw;
+        height: 70vh;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+      }
+      input {
+        display: none;
+      }
+      nav label:nth-child(3) {
+        display: block;
+        background-color: #008080;
+        color: white;
+        width: 164px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+      menu label {
+        display: block;
+        width: 56px;
+        height: 64px;
+        line-height: 56px;
+        background-color: #ff6347;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        border-radius: 50%;
+        position: absolute; 
+        right: 10px;
+        top: 10px;       
+      }
+      menu {
+        width: 90%;
+        height: 100%;
+        background-color: #226546e0;
+        position: absolute;
+        top: 2.5rem;
+        /* display: none; */
+        left: -100%;
+        transition: all 0.5s ease-out;
+      }
+      menu p {
+        width: 440px;
+        height: 250px;
+        background-color: #666666;
+        padding: 15px;
+        margin: 0;
+        margin-top: -125px;
+        margin-left: -220px;
+        margin-right: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      #open:checked ~ menu{
+        /* display: block; */
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>Ventana modal con :checked y radio buttons</h2>
+      <input type="radio" name="rb" id="open">
+      <label for="open">MOSTRAR MODAL</label>
+      <input type="radio" name="rb" id="close">
+      <menu>
+        <label for="close">X</label>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+          fuga ipsam id, debitis quisquam harum quam corrupti, ab doloremque
+          modi nesciunt magni esse inventore ex veritatis quibusdam libero
+          mollitia quis.Similique quaerat labore, provident reiciendis eius
+          libero maxime dicta obcaecati ratione voluptates neque ducimus, sint
+          est, praesentium vel dolor rem eaque alias! Porro corrupti incidunt
+          ullam eveniet necessitatibus itaque illo.
+        </p>
+      </menu>
+    </nav>
+  </body>
+</html>

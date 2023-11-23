@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-8-5
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 13/11/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-2-8-5</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Impact, sans-serif;
+      }
+      .container {
+        width: 600px;
+        height: 500px;
+        background-color: #e282f0;
+        position: relative;
+      }
+      .button {
+        text-decoration: none;
+        color: white;
+        background-color: #184040;
+        height: 64px;
+        width: 164px;
+        line-height: 64px;
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -82px;
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+      .button_1 {
+        top: 100px;
+      }
+      .lin__p {
+        display: block;
+        width: 0px;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+        transition: all 0.5s ease-in;
+      }
+      .lin__p--r {
+        left: 50%;
+        bottom: 12px;
+      }
+      .lin__p--l {
+        right: 50%;
+        bottom: 12px;
+      }
+      .button_1:hover .lin__p {
+        width: 50px;
+      }
+
+      .button_2::before,  .button_2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: white;
+        width: 5px;
+        height: 0px;
+        transition: all 0.5s ease-in-out;
+      }
+      .button_2::before {
+        bottom: 0;
+      }
+      .button_2::after {
+        right: 0;
+        bottom: 0;
+      }
+      .button_2:hover::after,  .button_2:hover::before{
+        height: 64px;
+      }    
+      </style>
+  </head>
+  <body>
+    <section class="container">
+      <a class="button button_1" href="">
+        BOTON
+        <span class="lin__p lin__p--l"></span>
+        <span class="lin__p lin__p--r"></span>
+      </a>
+      
+      <a class="button button_2" href="#">BOTON2</a>
+    </section>
+  </body>
+</html>

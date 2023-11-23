@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+        Descripción: CodigoPractica2.6.D
+        Autor: Carlos García Cachón
+        Fecha de creación/modificación: 23/11/2023
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Carlos García Cachón">
+        <meta name="description" content="CodigoPractica2.6.D">
+        <meta name="keywords" content="CodigoPractica, 2.6.D">
+        <meta name="generator" content="Apache NetBeans IDE 19">
+        <meta name="generator" content="60">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Carlos García Cachón</title>
+        <link rel="icon" type="image/jpg" href="../webroot/media/images/favicon.ico"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../webroot/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    </head>
+
+    <body>
+        <header class="text-center">
+            <h1>2.6.D Modelo de cajas:</h1>
+        </header>
+        <main>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                        <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;!--
+                                Descripción: PR-2-6-d
+                                Autor: Carlos García Cachón
+                                Fecha de creación/modificación: 27/10/2023
+                        --&gt;
+                        &lt;html lang="es"&gt;
+
+                        &lt;head&gt;
+                          &lt;meta charset="UTF-8" /&gt;
+                          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                          &lt;title&gt;PR-2-6-d&lt;/title&gt;
+                          &lt;style&gt;
+                            * {
+                              box-sizing: border-box;
+                              font-family: Impact, sans-serif;
+                            }
+
+                            .container {
+                              position: relative;
+                              padding: 100px;
+                              width: 500px;
+                              height: 400px;
+                              background-color: gray;
+                              margin: 50px 50px;
+                            }
+
+                            .container div:nth-child(n) {
+                              position: absolute;
+                              font-size: 3rem;
+                            }
+
+                            .box1 {
+                              background-color: yellow;
+                              width: 400px;
+                              height: 100px;
+                              bottom: 50px;
+                              left: 50px;
+                            }
+
+                            .box2 {
+                              background-color: red;
+                              width: 400px;
+                              height: 100px;
+                              top: 50px;
+                              left: 50px;
+                            }
+
+                            .box3 {
+                              background-color: blue;
+                              width: 100px;
+                              height: 350px;
+                              top: 30px;
+                              left: 100px;
+                            }
+
+                            .box4 {
+                              background-color: darkgreen;
+                              width: 100px;
+                              height: 350px;
+                              top: 30px;
+                              right: 100px;
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+
+                        &lt;body&gt;
+                          &lt;div class="container"&gt;
+                            &lt;div class="box1"&gt;1&lt;/div&gt;
+                            &lt;div class="box2"&gt;2&lt;/div&gt;
+                            &lt;div class="box3"&gt;3&lt;/div&gt;
+                            &lt;div class="box4"&gt;4&lt;/div&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class="fixed"&gt;
+                            ELEMENTO POSICIONADO CON FIXED
+                          &lt;/div&gt;
+                          &lt;div class="parrafo"&gt;
+                            &lt;div class="sticky"&gt;
+                              ELEMENTO POSICIONADO CON STICKY
+                            &lt;/div&gt;
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam magni et iure illum sit rerum, magnam maiores
+                            dolores deleniti veritatis enim quae optio doloribus delectus. Unde, ullam provident. Harum, eum!
+                            A est sapiente reiciendis totam, alias cum consequuntur tempora, ipsa non sed officiis quam? Laborum beatae incidunt
+                            aperiam aspernatur voluptate sit quisquam, unde modi? Assumenda asperiores aut commodi incidunt accusamus.
+                            Vel tempora minus perspiciatis, impedit veniam similique eius possimus eaque iusto aperiam a? Temporibus dolores
+                            debitis ea ipsum sapiente iste rerum? Omnis ea odit dolorum! Rem recusandae alias rerum aspernatur!
+                            Possimus autem culpa voluptate ut unde, suscipit corporis officiis cupiditate voluptates sunt voluptatibus vel
+                            explicabo perspiciatis itaque incidunt non dolores facere nisi accusamus. Quos expedita, eaque laborum facere rerum
+                            explicabo!
+                            Libero quibusdam repellat deserunt saepe itaque cumque, excepturi nostrum corrupti dicta atque, rem aut veniam quas
+                            vero inventore? Libero tempora illum eos vel quos, explicabo laboriosam unde accusamus ratione expedita.
+                            Porro id modi dolores perspiciatis! Expedita, enim est, soluta sit vel libero cum quia maxime a rem at quod natus,
+                            eveniet maiores porro consequuntur saepe. Quisquam officia et molestiae quo.
+                            Quaerat natus in corrupti? Non, quaerat placeat? Nesciunt laboriosam ad harum rerum unde at nulla numquam in! Qui
+                            perspiciatis, dicta necessitatibus, expedita voluptatibus est quidem porro optio itaque adipisci delectus?
+                            Voluptatum, aperiam eos cupiditate autem nesciunt beatae rem amet hic laboriosam distinctio iure commodi natus,
+                            nemo modi ea? Eveniet repellat, consequuntur repudiandae doloremque quam, nostrum laborum in sit exercitationem
+                            necessitatibus officia possimus aliquam accusantium nobis! Distinctio id hic voluptatum placeat quis molestias
+                            necessitatibus dolore vero. Culpa eum fuga blanditiis reprehenderit, veniam amet aspernatur tenetur iusto unde
+                            perspiciatis porro ratione accusamus recusandae saepe, quisquam corporis soluta quibusdam adipisci dolore vel nemo
+                            incidunt? Neque, unde facilis. Cupiditate autem, sint expedita veritatis impedit perferendis molestiae quaerat nemo
+                            placeat velit quibusdam quasi suscipit odio, ut est facilis aperiam earum distinctio veniam hic ex maxime! Illum,
+                            labore nemo? Hic, ducimus?
+                          &lt;/div&gt;
+                          &lt;div class="footer"&gt;
+                            &lt;p&gt;© 2023 Mi Empresa&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/body&gt;
+
+                        &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="position-fixed bottom-0 end-0">
+            <div class="row text-center">
+                <div class="footer-item">
+                    <address>© <a href="../../index.html" style="color: white; text-decoration: none; background-color: #666">Carlos García Cachón</a>
+                        IES LOS SAUCES 2023-24 </address>
+                </div>
+                <div class="footer-item">
+                    <a href="../indexProyectoTema2.html" style="color: white; text-decoration: none; background-color: #666">Inicio</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://github.com/Fighter-kun?tab=repositories" target="_blank"><img
+                            src="../webroot/media/images/github.png" alt="LogoGitHub" class="pe-5"/></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

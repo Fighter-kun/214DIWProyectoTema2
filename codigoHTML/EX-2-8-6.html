@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+	Descripción: EX-2-8-6
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 09/11/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX-2-8-6</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-weight: bold;
+      }
+      .container {
+        width: 98vw;
+        height: 100vh;
+        position: absolute;
+      }
+      .title {
+        margin-left: 25%;
+      }
+      .body {
+        background-color: #73dfcf;
+        padding: 25px;
+      }
+      .producto {
+        background-color: #bbbbbb;
+        width: 180px;
+        height: 300px;
+        display: inline-block;
+        margin-left: 2%;
+      }
+      p {
+        color:#4c822b;
+        padding-left: 10px;
+        padding-top: 5px;
+        font-size: 0.80rem;
+      }
+      .imagenReloj {
+        width: 100%;
+        height: 180px;
+      }
+      .bannerPrecio {
+        position: relative;
+        top: -100px;
+        width: 100px;
+        height: 40px;
+      }
+      .precio {
+        position: relative;
+        top: -137px;
+        left: 10px;
+        width: 100px;
+        height: 40px;
+        font-size: 1.5rem;
+      }
+      .icono {
+        width: 30px;
+        height: 30px;
+      }
+      .iconoCheck {
+        position: relative;
+        top: -85px;
+        left: 5px;
+        width: 30px;
+      }
+      .iconoMedalla {
+        position: relative;
+        top: -120px;
+        left: 50px;
+        width: 30px;
+      }
+      .iconoStock {
+        position: relative;
+        top: -155px;
+        left: 140px;
+        width: 30px;
+      }
+      .hoverIconos {
+        width: 170px;
+        height: 35px;
+        top: -325px;
+        left: 5px;
+        position: relative;
+        z-index: -1;
+      }
+      .container .producto--1:hover .hoverIconos {
+        z-index: 1;
+      }
+      .container .producto--2:hover .hoverIconos {
+        z-index: 1;
+      }
+      .container .producto--3:hover .hoverIconos {
+        z-index: 1;
+      }
+      .container .producto--4:hover .hoverIconos {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h1>LISTADO DE ARTICULOS</h1></div>
+      <div class="body">
+        <div class="producto producto--1">
+          <img class="imagenReloj" src="images/reloj.jpg" alt="">
+          <p>RELOJ DE CUARZO CON CORREA DE SILICONA INFORMAL ...</p>
+          <img class="bannerPrecio" src="images/boton_amarillo.png" alt="">
+          <div class="precio">65,99 €</div>
+          <div class="iconoCheck"><a href="#"><img class="icono" src="images/novedad.png" alt=""></a></div>
+          <div class="iconoMedalla"><a href="#"><img class="icono" src="images/topventas.png" alt=""></a></div>
+          <div class="iconoStock"><a href="#"><img class="icono" src="images/stock-3.png" alt=""></a></div>
+          <div class="hoverIconos">
+            <a href="#"><img class="icono" src="images/vista-previa.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/listadeseo.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/comparador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/configurador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/carro.png" alt=""></a>
+          </div>
+        </div>
+        <div class="producto producto--2">
+          <img class="imagenReloj" src="images/apple-watch-6.jfif" alt="">
+          <p>RELOJ DE CUARZO CON CORREA DE SILICONA INFORMAL ...</p>
+          <img class="bannerPrecio" src="images/boton_amarillo.png" alt="">
+          <div class="precio">399,99 €</div>
+          <div class="iconoCheck"><a href="#"><img class="icono" src="images/novedad.png" alt=""></a></div>
+          <div class="iconoMedalla"><a href="#"><img class="icono" src="images/topventas.png" alt=""></a></div>
+          <div class="iconoStock"><a href="#"><img class="icono" src="images/stock-1.png" alt=""></a></div>
+          <div class="hoverIconos">
+            <a href="#"><img class="icono" src="images/vista-previa.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/listadeseo-gris.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/comparador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/configurador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/carro.png" alt=""></a>
+          </div>
+        </div>
+        <div class="producto producto--3">
+          <img class="imagenReloj" src="images/samsungGalaxyWatchActive2.png" alt="">
+          <p>APPLE WATCH-6 CAJA 44MM ALUMINIO Y CORREA AZUL ...</p>
+          <img class="bannerPrecio" src="images/boton_amarillo.png" alt="">
+          <div class="precio">279,99 €</div>
+          <div class="iconoCheck"><a href="#"><img class="icono" src="images/novedad.png" alt=""></a></div>
+          <div class="iconoMedalla"><a href="#"><img class="icono" src="images/topventas.png" alt=""></a></div>
+          <div class="iconoStock"><a href="#"><img class="icono" src="images/stock-3.png" alt=""></a></div>
+          <div class="hoverIconos">
+            <a href="#"><img class="icono" src="images/vista-previa.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/listadeseo.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/comparador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/configurador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/carro-gris.png" alt=""></a>
+          </div>
+        </div>
+        <div class="producto producto--4">
+          <img class="imagenReloj" src="images/apple-watch-6-2.jfif" alt="">
+          <p>APPLE WATCH-6 CAJA 44MM ALUMINIO Y CORREA AZUL ... ...</p>
+          <img class="bannerPrecio" src="images/boton_amarillo.png" alt="">
+          <div class="precio">265,99 €</div>
+          <div class="iconoCheck"><a href="#"><img class="icono" src="images/novedad.png" alt=""></a></div>
+          <div class="iconoMedalla"><a href="#"><img class="icono" src="images/topventas.png" alt=""></a></div>
+          <div class="iconoStock"><a href="#"><img class="icono" src="images/stock-3.png" alt=""></a></div>
+          <div class="hoverIconos">
+            <a href="#"><img class="icono" src="images/vista-previa-gris.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/listadeseo.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/comparador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/configurador.png" alt=""></a>
+            <a href="#"><img class="icono" src="images/carro.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

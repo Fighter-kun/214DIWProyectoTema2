@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-6-d
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 27/10/2023
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PR-2-6-d</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Impact, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      padding: 100px;
+      width: 500px;
+      height: 400px;
+      background-color: gray;
+      margin: 50px 50px;
+    }
+
+    .container div:nth-child(n) {
+      position: absolute;
+      font-size: 3rem;
+    }
+
+    .box1 {
+      background-color: yellow;
+      width: 400px;
+      height: 100px;
+      bottom: 50px;
+      left: 50px;
+    }
+
+    .box2 {
+      background-color: red;
+      width: 400px;
+      height: 100px;
+      top: 50px;
+      left: 50px;
+    }
+
+    .box3 {
+      background-color: blue;
+      width: 100px;
+      height: 350px;
+      top: 30px;
+      left: 100px;
+    }
+
+    .box4 {
+      background-color: darkgreen;
+      width: 100px;
+      height: 350px;
+      top: 30px;
+      right: 100px;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 0px;
+      width: 98vw;
+      height: 100px;
+      background-color: palevioletred;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .sticky {
+      position: sticky;
+      width: 100%;
+      height: 100px;
+      background-color: aquamarine;
+      top: 80px;
+    }
+
+    .sticky2 {
+      position: sticky;
+      width: 100%;
+      height: 100px;
+      background-color: coral;
+      top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+  </div>
+
+  <div class="fixed">
+    ELEMENTO POSICIONADO CON FIXED
+  </div>
+  <div class="parrafo">
+    <div class="sticky">
+      ELEMENTO POSICIONADO CON STICKY
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam magni et iure illum sit rerum, magnam maiores
+    dolores deleniti veritatis enim quae optio doloribus delectus. Unde, ullam provident. Harum, eum!
+    A est sapiente reiciendis totam, alias cum consequuntur tempora, ipsa non sed officiis quam? Laborum beatae incidunt
+    aperiam aspernatur voluptate sit quisquam, unde modi? Assumenda asperiores aut commodi incidunt accusamus.
+    Vel tempora minus perspiciatis, impedit veniam similique eius possimus eaque iusto aperiam a? Temporibus dolores
+    debitis ea ipsum sapiente iste rerum? Omnis ea odit dolorum! Rem recusandae alias rerum aspernatur!
+    Possimus autem culpa voluptate ut unde, suscipit corporis officiis cupiditate voluptates sunt voluptatibus vel
+    explicabo perspiciatis itaque incidunt non dolores facere nisi accusamus. Quos expedita, eaque laborum facere rerum
+    explicabo!
+    Libero quibusdam repellat deserunt saepe itaque cumque, excepturi nostrum corrupti dicta atque, rem aut veniam quas
+    vero inventore? Libero tempora illum eos vel quos, explicabo laboriosam unde accusamus ratione expedita.
+    Porro id modi dolores perspiciatis! Expedita, enim est, soluta sit vel libero cum quia maxime a rem at quod natus,
+    eveniet maiores porro consequuntur saepe. Quisquam officia et molestiae quo.
+    Quaerat natus in corrupti? Non, quaerat placeat? Nesciunt laboriosam ad harum rerum unde at nulla numquam in! Qui
+    perspiciatis, dicta necessitatibus, expedita voluptatibus est quidem porro optio itaque adipisci delectus?
+    Voluptatum, aperiam eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati
+    illo quia ut accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+    Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime,
+    vel beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+    Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+    corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+    Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+    numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+    quaerat officiis.
+    Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+    necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+    Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+    quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+    Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+    obcaecati.
+    Fugit accusantium consectetur odio. Incidunt quod atque eos eius ducimus voluptatibus corrupti ad minima cupiditate
+    voluptatem iusto praesentium, voluptatum consequuntur rerum nihil labore non pariatur officiis impedit velit optio.
+    Animi!
+    Explicabo asperiores voluptas libero doloribus sit dolor amet impedit nam dolorem ipsam. Sint expedita esse,
+    praesentium ullam dicta necessitatibus aut vero adipisci itaque id soluta aspernatur tempore, magnam cupiditate
+    dolorum.
+    Natus eaque quas rem qui, veritatis deleniti nostrum quam ratione amet accusamus incidunt aut voluptatum unde ut
+    recusandae non aspernatur at ab perspiciatis maiores harum porro sit! Eos, laudantium cumque?
+    Ducimus veritatis, similique illum nisi quasi inventore asp
+    tatum, aperiam eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo
+    quia ut accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+    Adipisci animi autem omnis inventore non nostrum sapiente odit nesci
+    Fugit accusantium consectetur odio. Incideum ratione aut at corrupti ullam excepturi nemo modi, doloribus mollitia
+    deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+    Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+    numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+    quaerat officiis.
+    Fugit accusantium consectetur odio. Incid
+  </div>
+  <p>
+  <div class="sticky2">
+    BARRA STICKY2
+  </div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam magni et iure illum sit rerum, magnam
+  maiores dolores deleniti veritatis enim quae optio doloribus delectus. Unde, ullam provident. Harum, eum!
+  A est sapiente reiciendis totam, alias cum consequuntur tempora, ipsa non sed officiis quam? Laborum beatae incidunt
+  aperiam aspernatur voluptate sit quisquam, unde modi? Assumenda asperiores aut commodi incidunt accusamus.
+  Vel tempora minus perspiciatis, impedit veniam similique eius possimus eaque iusto aperiam a? Temporibus dolores
+  debitis ea ipsum sapiente iste rerum? Omnis ea odit dolorum! Rem recusandae alias rerum aspernatur!
+  Possimus autem culpa voluptate ut unde, suscipit corporis officiis cupiditate voluptates sunt voluptatibtatum, aperiam
+  eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo quia ut
+  accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis tatum, aperiam eos cupiditate corrupti, officia harum velit exercitationem deleniti
+  voluptas, maiores obcaecati illo quia ut accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit
+  dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incidassumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.tatum, aperiam eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores
+  obcaecati illo quia ut accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Oftatum, aperiam
+  eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo quia ut
+  accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incidficia maxime, vel beatae rem saepe vitae ipsam repudiandae error accusamus
+  consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incid
+  Fugit accusantium consectetur odio. Incidus vel explicabo perspiciatis itaque incidunt non dolores facere nisi
+  accusamus. Quos expedita, eaque laborum facere rerum explicabo!
+  Libero quibusdam repellat deserunt saepe itaque cumque, excepturi nostrum corrupti dicta atque, rem aut veniam quas
+  vero inventore? Libero tempora illum eos vel quos, explicabo laboriosam unde accusamus ratione expedita.
+  Porro id modi dolores perspiciatis! Expedita, enim est, soluta sit vel libero cum tatum, aperiam eos cupiditate
+  corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo quia ut accusamus magnam
+  impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque pertatum, aperiam eos cupiditate corrupti,
+  officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo quia ut accusamus magnam impedit! Beatae
+  enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incidferendis fugit illo dolorem quasi nisi numquam veritatis impedit, voluptate
+  dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incidquia maxime a rem at quod natus, eveniet maiores porro consequuntur saepe.
+  Quisquam officia et molestiae quo.
+  de omnis ducimus. Quos, delectus totam quidem libero possimus ut! Impedit modi vero iusto repellendus accusamus minus.
+  Sapiente facilis, nihil, doloremque maiores nostrum, alias unde asperiores beatae doloribus optio deleniti totam dicta
+  quisquam laborum omnis mollitia quam minus sequi porro? Fugit delectus, magni omnis suscipit earum in.
+  Enim sunt impedit eos nulla, consequuntur ullam? Atque odit aut nesciunt dignissimos. Obcaecati sint esse fuga
+  cupiditate asperiores sapiente, nostrum saepe, ullam dolorum nulla expedita porro quae minus, temporibus perspiciatis?
+  Quisquam sed pariatur, eius debitis quia quibusdam quasi accusamus reiciendis ducimus minus at sit sapiente vitae. Ad
+  enim culpa exercitationem rem. Eos dolor blanditiis neque error corporis ad ducimus non.
+  Harum officiis maiores voluptas magni, et dolore quibusdam a, soluta laborum quos aut est veritatis eaque odio velit
+  facilis labore nulla quae ea modi pariatur. Perferendis voluptatibus natus necessitatibus repellendus!
+  Magni dolorem at possimus ipsa obcaecati nihil accusamus, eligendi ipsam, placeat, facere nesciunt assumenda expedita
+  enim delectus totam? Illum distinctio tempore quo odio officia nobis eos dolorem placeat ratione dolore.
+  Nostrum neque dolore quis dicta soluta quas saepe? Iure architecto assumenda quos quibusdam doloremque, at statum,
+  aperiam eos cupiditate corrupti, officia harum velit exercitationem deleniti voluptas, maiores obcaecati illo quia ut
+  accusamus magnam impedit! Beatae enim quam nam sint. Saepe aperiam fugit dolore eum mollitia.
+  Adipisci animi autem omnis inventore non nostrum sapiente odit nesciunt! Alias, repudiandae magni. Officia maxime, vel
+  beatae rem saepe vitae ipsam repudiandae error accusamus consectetur velit distinctio. Inventore, fuga corporis?
+  Quis, facere ex voluptate consequuntur blanditiis libero dolore sapiente nulla debitis sunt eum ratione aut at
+  corrupti ullam excepturi nemo modi, doloribus mollitia deleniti nihil. Ipsam expedita suscipit mollitia doloremque.
+  Sint distinctio amet possimus eum temporibus. Unde, ipsam enim! Cumque perferendis fugit illo dolorem quasi nisi
+  numquam veritatis impedit, voluptate dolores laboriosam, possimus architecto sapiente iste ratione reprehenderit
+  quaerat officiis.
+  Ea, amet facere quo rem dolorem natus ad sunt odio voluptates aliquid possimus nam ratione minus dolor cumque non
+  necessitatibus blanditiis. Quis assumenda maiores ullam, unde rem cumque dignissimos nostrum.
+  Natus id distinctio libero alias eligendi ratione, corrupti consequatur eaque eveniet obcaecati ducimus laboriosam
+  quasi cumque officia magnam. Ut odio corporis est quo culpa inventore nulla unde. Officiis, sed numquam.
+  Visit modi quod similique eligendi aliquid atque id aperiam quaerat asperiores odit minima hic. Iste dolorem cum
+  obcaecati.
+  Fugit accusantium consectetur odio. Incidimilique distinctio. Ipsam sequi praesentium molestias inventore vel nemo
+  quaerat id. Eos dolorem vel cumque.
+  Ipsam, obcaecati architecto! Unde distinctio voluptatem sit quidem, repellendus deleniti porro. Voluptate doloremque
+  eveniet optio delectus non magni accusamus perferendis dolore, beatae illum, placeat quidem? Molestiae non eius quasi
+  quos!
+  Quae quia aspernatur ad repellendus vel ea officia odit delectus asperiores, eum distinctio quaerat incidunt vitae
+  aliquid soluta, totam expedita ullam magnam odio eveniet molestias architecto non animi. In, nesciunt.</p>
+</body>
+
+</html>

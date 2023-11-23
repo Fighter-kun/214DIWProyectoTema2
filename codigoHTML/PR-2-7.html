@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-7
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 27/10/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-2-7</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 98vw;
+        height: 100vh;
+      }
+      header {
+        height: 10vh;
+      }
+      table {
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+        font-weight: bold;
+        border-collapse: collapse;
+      }
+      header td {
+        width: 33.33%;
+        vertical-align: middle;
+      }
+      header td:nth-of-type(1) {
+        background-color: #336655;
+      }
+      header td:nth-of-type(2) {
+        background-color: #5f9ea0;
+      }
+      header td:nth-of-type(3) {
+        background-color: rgb(102, 51, 85);
+      }
+      section {
+        border-top: 2px solid #d98a76;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+      }
+      nav {
+        width: 20%;
+        height: 100%;
+        background-color: #228899;
+        position: absolute;
+        border-right: solid #d98a76;
+      }
+      ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      li a {
+        display: block;
+        width: 100%;
+        height: 32px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #51848d;
+        line-height: 32px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+      main {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        left: 20%;
+      }
+      main article:nth-child(odd) {
+        background-color: #87ceeb;
+        height: 25vh;
+      }
+      main article:nth-child(even) {
+        background-color: #7fffd4;
+        height: 30vh;
+      }
+      aside {
+        width: 20%;
+        height: 100%;
+        padding: 5px;
+        background-color: #ff4500;
+        color: white;
+        position: absolute;
+        right: 0;
+        border-left: 2px solid #d98a76;
+      }
+      h2 {
+        margin: 0;
+      }
+      article {
+        padding: 10px;
+      }
+      article:nth-of-type(2) h2,
+      article:nth-of-type(2) h3 {
+        text-align: center;
+      }
+      article table {
+        margin-top: 60px;
+        text-align: justify;
+      }
+      article table td:nth-child(1) {
+        width: 80%;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 15px;
+      }
+      footer p {
+        margin: 0;
+      }
+      footer {
+        border-top: 2px solid #d98a76;
+        background-color: #cae91e;
+        text-align: center;
+        width: 98.9%;
+        height: 3%;
+        position: absolute;
+        font-size: 12px;
+      }
+      span {
+        margin-left: 15%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <table>
+          <td>&#127981; Logo empresa &#128509;</td>
+          <td>&#128269;Buscar</td>
+          <td>&#128100;Cuenta, &#128722;cesta</td>
+        </table>
+      </header>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+          </ul>
+        </nav>
+        <main>
+          <article><h2>Mi Artículo 1</h2>
+            <table>
+              <td>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum.</p>
+              </td>
+              <td>
+                <img src="http://picsum.photos/id/111/100/100" alt="">
+              </td>
+            </table></article>
+          <article>
+            <h2>Mi Artículo < 2 ></h2>
+            <h3>Subtitulo 2 artículo</h3>
+            <table>
+              <td>
+                <p>Contenido del article 2</p>
+              </td>
+              <td>
+                <img src="http://picsum.photos/id/111/100/100" alt="">
+                <span>Links</span>
+              </td>
+            </table>
+          </article>
+          <article><h2>Mi Artículo 3</h2>
+            <table>
+              <td>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rem!</p>
+              </td>
+              <td>
+                <img src="http://picsum.photos/id/111/100/100" alt="">
+              </td>
+            </table></article>
+        </main>
+        <aside>
+          <p>Aqui tenemos nuestra sección de links interesantes</p>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a> ...
+        </aside>
+      </section>
+      <footer>
+        <p>Diseño de Interfaces Web</p>
+      </footer>
+    </div>
+  </body>
+</html>

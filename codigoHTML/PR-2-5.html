@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-5
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 20/10/2023
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container {
+            width: 100vw;
+            height: 72vh;
+            background-color: #fcf7bb;
+            min-width: 640px;
+        }
+        label{
+            border-radius: 5px;
+            width: 150px;
+        }
+        fieldset:nth-of-type(1) label {
+            display: inline-block;
+        }
+        input[name="dp"] {
+            height: 48px;
+            border: none;
+            margin-bottom: 10px;
+            
+        }
+        #apel, #pwd {
+            background-color: #f5c0cc;
+        }
+        #email:valid {
+            background-color: #9fffd2;
+        }
+        input:invalid {
+            background-color: red;
+        }
+        table {
+            width: 100%;
+        }
+        table td {
+            width: 50%;
+            height: 64px;  
+            background-color: #cec2f9;
+            text-align: justify;
+            padding-left: 15px;
+        }
+        #button {
+            background-color: #ea0015;
+            margin-left: 50%;
+            width: 15%;
+            height: 45px;
+            border-radius: 5px;
+        }
+        :checked {
+            box-shadow: 0px 0px 5px 2px orangered;
+        }
+        label[for="buscar"] {
+            padding-left: 43px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul:first-of-type li::before {
+            content: "**";
+            margin-right: 5px;
+            color: red;
+        }
+        ul:nth-of-type(2) li::before {
+            content: url('http://picsum.photos/id/111/25/25');
+            margin-right: 5px;
+            color: red;
+        }
+        ul:nth-of-type(2) li::after {
+            content: url('https://img.icons8.com/ios/25/search--v1.png');
+            margin-left: 5px;
+        }
+        ul:last-child li:nth-child(even)::before {
+            content: "€€€";
+            margin-right: 5px;
+            color: green;
+        }
+        ul:last-child li:nth-child(odd)::before {
+            content: "$$$";
+            margin-right: 5px;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <form action="">
+        <fieldset>
+            <legend>Pseudo-clases en formularios</legend>
+            <label for="nombre">:autofocus</label>
+            <input type="text" name="dp" id="nombre" autofocus size="30" maxlength="28" placeholder="Nombre" tabindex="1"><br>
+            <label for="apel">:required</label>
+            <input type="text" name="dp" id="apel" autofocus size="40" maxlength="38" placeholder="Apellido" tabindex="1" required><br>
+            <label for="email">:valid/:invalid</label>
+            <input type="text" name="dp" id="email" autofocus size="40" maxlength="38" placeholder="mail@main.com" ad><br>
+            <label for="pwd">Password (8 min):</label>
+            <input type="text" name="dp" id="pwd" autofocus size="16" minlength="8" placeholder="Password" required>
+        </fieldset>
+        <fieldset>
+            <legend>file, date,color, time</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="file">Archivo a subir:</label><br>
+                        <input type="file" name="" id="file">
+                    </td>
+                    <td>
+                        <label for="color">Elige color:</label>
+                        <input type="color" name="" id="color">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Fecha pedido</label>
+                        <input type="date" name="" id="date">
+                    </td>
+                    <td>
+                        <label for="time">Hora:</label>
+                        <input type="time" name="" id="time">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>:checked, :in-range /:out-of-range</legend>
+            <br>
+            Sexo:
+            <input type="radio" name="sexo" id="hbr">
+            <label for="hbr">Hombre</label>
+            <input type="radio" name="sexo" id="mjr" checked>
+            <label for="mjr">Mujer</label><br><br>
+            Aficiones: 
+            <input type="checkbox" name="musica" id="musica">
+            <label for="musica">Música</label>
+            <input type="checkbox" name="deportes" id="deportes">
+            <label for="deportes">Deportes</label>
+            <input type="checkbox" name="lectura" id="lectura">
+            <label for="lectura">Lectura</label>
+            <input type="checkbox" name="cocina" id="cocina">
+            <label for="cocina">Cocina</label><br><br><br>
+            <label for="edad">Edad (1-120):</label>
+            <input type="number" name="" id="edad" min="1" max="120" placeholder="1">
+            <label for="buscar">Buscar</label>
+            <input type="search" name="" id="buscar" size="20">
+            <svg width="20" height="20" viewBox="0 0 30 30">
+                <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+            </svg><br><br>
+        </fieldset>
+        <input type="submit" value="Enviar datos" id="button">
+    </form>
+   </div>
+   <div class="wrapper">
+    <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+        <li>fourth element</li>
+    </ul>
+    <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+        <li>fourth element</li>
+    </ul>
+    <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+        <li>fourth element</li>
+    </ul>
+   </div>
+</body>
+</html>

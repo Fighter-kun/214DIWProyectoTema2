@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-3
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 14/10/2023
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .list1 {
+            width: 400px;
+            height: 300px;
+            background-color: black;
+            list-style: none;
+            padding: 3% 5% 10% 5%;
+        }
+        .list1 li {
+            background-color: rgb(238, 134, 242);
+            padding: 5px;
+            margin: 5px;
+            height: 30px;
+            width: 150px;
+            text-align: center;
+            transition: margin-left 1s ease,
+                        background 0.5s ease;
+        }
+        .list1 a:link {
+            text-decoration: none;
+        }
+        .list1 li:hover {
+            background-color: blueviolet;
+            margin-left: 20px;
+        }
+        .list1 a {
+           color: white;
+        }
+
+        .list2{
+            width: 800px;
+            height: 60px;
+            background-color: black;
+            list-style: none;
+        }
+
+        .list2 li {
+            background-color: violet;
+            padding: 1px;
+            margin: 0.75% 0% 5% 5%;
+            height: 30px;
+            width: 150px;
+            width: 120px;
+            height: 48px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .list2 a {
+            line-height: 48px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            color: white;
+            border-radius: 5px;
+            transition: all 1s ease-in;
+        }
+
+        .list2 a:link {
+            background-color: pink;
+        }
+
+        .list2 a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .list2 a:visited {
+            background-color: coral;
+        }
+
+        .list2 a:active {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="list1">
+            <li><a href="#">Primera opción</a></li>
+            <li><a href="#">Segunda opción</a></li>
+            <li><a href="#">Tercera opción</a></li>
+            <li><a href="#">Cuarta opción</a></li>
+            <li><a href="#">Quinta opción</a></li>
+        </ul>
+
+        <ul class="list2">
+            <li><a href="https://www.educa.jcyl.es/es">Educacyl</a></li>
+            <li><a href="http://marca.com/">Deportes</a></li>
+            <li><a href="http://www.youtube.com/">Videos</a></li>
+            <li><a href="http://unplash.com/es">Imágenes</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

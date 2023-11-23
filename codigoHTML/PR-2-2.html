@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-2
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 09/10/2023
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-2</title>
+    <style>
+        table {
+            margin: 0;
+            border-collapse: collapse;
+            table-layout: fixed;
+            background: #bbb;
+            width: 100%;
+            height: 120px;
+        }
+
+        table td {
+            width: 100%;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0px;
+        }
+
+        table td img {
+            margin: auto;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+            background-color: #d3d3d3;
+            float: left;
+            min-height: 120px;
+        }
+
+        body {
+            height: 100vh;
+            background-color: red;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            line-height: 120px;
+
+        }
+
+        main {
+            float: left;
+            height: 70%;
+            width: 100%;
+        }
+
+        nav {
+            float: left;
+            width: 25%;
+            height: 100%;
+            background-color: red;
+        }
+
+        section {
+            width: 50%;
+            height: 110%;
+            float: left;
+            background-color: #707070;
+        }
+
+        section>article>h2 {
+            text-align: center;
+        }
+
+        section>article>h3 {
+            text-align: center;
+        }
+
+        main > section > article {
+            height: 25%;
+        }
+
+        ul {
+            list-style: none;
+            background-color: #ccc;
+            width: 93%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        aside {
+            width: 23%;
+            height: 80px;
+            margin-top: 10px;
+            float: right;
+            margin-right: 1%;
+            background-color: #ccc;
+        }
+        aside p {
+            margin-bottom: 0px;
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            clear: both;
+            position: fixed;
+            bottom: 0px;
+            background-color: #666;
+            height: 15vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="https://picsum.photos/id/2/100/100" /></td>
+                <td><h1>CABECERA</h1></td>
+                <td><img src="https://picsum.photos/id/111/100/100" /></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h2>Mi primer articulo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quaerat nam debitis quibusdam
+                    incidunt ea! Similique, optio quam quos repudiandae eius voluptates sit possimus iure facere
+                    sapiente quibusdam adipisci. Amet?</p>
+            </article>
+            <article>
+                <h2>Mi segundo articulo</h2>
+                <h3>Subtitulo 2 articulo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quaerat nam debitis quibusdam
+                    incidunt ea! Similique, optio quam quos repudiandae eius voluptates sit possimus iure facere
+                    sapiente quibusdam adipisci. Amet?</p>
+            </article>
+            <article>
+                <h2>Mi tercero articulo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quaerat nam debitis quibusdam
+                    incidunt ea! Similique, optio quam quos repudiandae eius voluptates sit possimus iure facere
+                    sapiente quibusdam adipisci. Amet?</p>
+            </article>
+        </section>
+        <aside>
+            <p>Aquí tenemos nuestra sección de links interesantes.</p>
+            <details>
+                <summary>Lista de datos</summary>
+                <ol>
+                    <li>opcion 1</li>
+                    <li>opcion 2</li>
+                    <li>opcion 3</li>
+                    <li>opcion 4</li>
+                </ol>
+            </details>
+        </aside>
+    </main>
+    <footer>
+        <p>@Todos los derechos reservados</p>
+        Progres:<progress max="100" value="15"></progress>
+    </footer>
+</body>
+
+</html>

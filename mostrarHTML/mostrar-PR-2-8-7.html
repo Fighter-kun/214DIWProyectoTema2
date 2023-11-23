@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+        Descripción: CodigoPractica2.8.7
+        Autor: Carlos García Cachón
+        Fecha de creación/modificación: 23/11/2023
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Carlos García Cachón">
+        <meta name="description" content="CodigoPractica2.8.7">
+        <meta name="keywords" content="CodigoPractica, 2.8.7">
+        <meta name="generator" content="Apache NetBeans IDE 19">
+        <meta name="generator" content="60">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Carlos García Cachón</title>
+        <link rel="icon" type="image/jpg" href="../webroot/media/images/favicon.ico"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../webroot/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    </head>
+
+    <body>
+        <header class="text-center">
+            <h1>2.8.7 Menu Amazon:</h1>
+        </header>
+        <main>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                        <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;!--
+                                Descripción: PR-2-8-7
+                                Autor: Carlos García Cachón
+                                Fecha de creación/modificación: 13/11/2023
+                        --&gt;
+                        &lt;html lang="es"&gt;
+                          &lt;head&gt;
+                            &lt;meta charset="UTF-8" /&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                            &lt;title&gt;PR-2-8-7&lt;/title&gt;
+                            &lt;style&gt;
+                              * {
+                                --ff:Verdana, sans-serif;
+                                    box-sizing: border-box;
+                                    font-family: var(--ff);
+                                    margin: 0;
+                                    padding: 0;
+                              }
+                              body{
+                                    margin: 0;
+                                }
+                              .container {
+                                width: 100vw;
+                                height: 100vh;
+                                background-image: url(images/fondoAmazon.PNG);
+                              }
+                              nav {
+                                width: 100%;
+                                height: 120px;
+                                position: relative;
+                              }
+                              header {
+                                height: 70px;
+                                background-color: #131921;
+                              }
+                              menu {
+                                height: 60px;
+                                background-color: #232f3e;
+                                margin: 0;
+                                padding-top: 5px;
+                              }
+                              img {
+                                max-width: 100%;
+                                display: block;
+                                height: 25px;
+                                margin-top: 10px;
+                                margin-left: 30px;
+                              }
+                              input {
+                                display: none;
+                              }
+                              label img:hover {
+                                outline: 2px solid white;
+                              }
+                              ul {
+                                width: 364px;
+                                height: 100vh;
+                                padding: 0;
+                                margin-top: 0;
+                                list-style: none;
+                                overflow: scroll;
+                                position: absolute;
+                                top: 0;
+                                background-color: white;
+                                z-index: 1;
+                              }
+                              li {
+                                width: 100%;
+                                height: 48px;
+                              }
+                              .hola {
+                                display: block;
+                                width: 100%;
+                                height: 48px;
+                                background-color: #232f3e;
+                                color: white;
+                              }
+                              label {
+                                cursor: pointer;
+                              }
+                              a, span {
+                                display: block;
+                                width: 100%;
+                                height: 48px;
+                                line-height: 48px;
+                                padding-left: 10px;
+                                color: #353535;
+                                text-decoration: none;
+                                background-color: #ffffff;
+                                cursor: pointer;
+                              }
+                              a:hover {
+                                background-color: #ccc;
+                              }
+                              span {
+                                font-weight: bold;
+                              }
+                              ul.mp {
+                                left: -100%;
+                                transition: all 0.5s ease-in-out;
+                              }
+                              ul.mapv {
+                                left: 100%;
+                                top: 48px;
+                                transition: all 0.5s ease-in-out;
+                              }
+                              #open:checked ~ .mp {
+                                left: 0;
+                              }
+                              #open:checked ~ #lbclose {
+                                display: block;
+                                visibility: visible;
+                                opacity: 0.7;
+                              }
+                              #lbclose {
+                                display: block;
+                                width: 75vw;
+                                height: 100vh;
+                                position: absolute;
+                                top: 0;
+                                left: 360px;
+                                background-color: #07090C;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: opacity 0.5s ease-in-out;
+                              }
+                              #lbclose::before {
+                                content: "X";
+                                display: block;
+                                position: absolute;
+                                font-size: 2rem;
+                                color: white;
+                                font-weight: bold;
+                                top: 15px;
+                                left: 95px;
+                              }
+                              #openApv:checked ~ .mp .mapv {
+                                z-index: 5;
+                                left: 0;
+                              }
+                              &lt;/style&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                            &lt;div class="container"&gt;
+                                &lt;nav&gt;
+                                    &lt;header&gt;Amazon.es&lt;/header&gt;
+                                    &lt;menu&gt;
+                                        &lt;input type="radio" name="br" id="open"&gt;
+                                        &lt;label for="open"&gt;&lt;img src="images/hbgr.PNG"&gt;&lt;/label&gt;
+                                        &lt;input type="radio" name="br" id="close"&gt;
+                                        &lt;input type="radio" name="apv" id="openApv"&gt;
+                                        &lt;input type="radio" name="apv" id="closeApv" checked&gt;
+                                        &lt;ul class="mp"&gt;
+                                            &lt;span class="hola"&gt;Hola, identificate&lt;/span&gt;
+                                            &lt;span&gt;Tendencias&lt;/span&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Los mas vendidos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Ultimas novedades&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Productos del momento&lt;/a&gt;&lt;/li&gt;
+                                            &lt;span&gt;Contenido y Dispositivos Dig.&lt;/span&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;
+                                                &lt;label for="openApv"&gt;Amazon Prime Video&lt;/label&gt;
+                                            &lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Amazon Music&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Amazon Photos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;Echo y Alexa&lt;/a&gt;&lt;/li&gt;
+                                            &lt;ul class="mapv"&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;
+                                                    &lt;label for="closeApv"&gt;MENU PRINCIPAL&lt;/label&gt;
+                                                &lt;/a&gt;&lt;/li&gt;
+                                                &lt;span&gt;Amazon Prime Video&lt;/span&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Todos los videos &lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Tienda&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Categorias&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Mi espacio&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/ul&gt;
+                                        &lt;label for="close" id="lbclose"&gt;&lt;/label&gt;
+                                    &lt;/menu&gt;
+
+                                &lt;/nav&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="position-fixed bottom-0 end-0">
+            <div class="row text-center">
+                <div class="footer-item">
+                    <address>© <a href="../../index.html" style="color: white; text-decoration: none; background-color: #666">Carlos García Cachón</a>
+                        IES LOS SAUCES 2023-24 </address>
+                </div>
+                <div class="footer-item">
+                    <a href="../indexProyectoTema2.html" style="color: white; text-decoration: none; background-color: #666">Inicio</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://github.com/Fighter-kun?tab=repositories" target="_blank"><img
+                            src="../webroot/media/images/github.png" alt="LogoGitHub" class="pe-5"/></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

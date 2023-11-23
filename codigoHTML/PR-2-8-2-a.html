@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+	Descripción: PR-2-8-2-a
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 31/10/2023
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR-2-8-2-a</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Verdana, sans-serif;
+      }
+      .wrapper {
+        width: 600px;
+      }
+      a {
+        display: block;
+        background-color: #dddddd;
+        color: #518bbf;
+        font-weight: bold;
+        text-decoration: none;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        padding-left: 10px;
+        border-bottom: 1px solid grey;
+      }
+      .wrapper p{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: #eeeeee;
+      }
+      p {
+        display: none;
+      }
+      .wrapper p:target {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="wrapper">
+      <a href="#p1">Título 1</a>
+      <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id officiis aliquid natus. Nesciunt rerum veritatis, magnam eveniet odit excepturi nihil pariatur similique accusantium explicabo ad eaque, ducimus dolorum deleniti quidem.</p>
+      <a href="#p2">Título 2</a>
+      <p id="p2">Sunt eligendi dolor laborum vitae optio dicta placeat. Aliquam cumque deleniti, velit facilis cupiditate eveniet, quas modi et dicta veniam ratione nam magnam perspiciatis distinctio recusandae ipsum itaque rerum quos.</p>
+      <a href="#p3">Título 3</a>
+      <p id="p3">Animi ipsum facere neque inventore assumenda molestias, repellat culpa libero, at vitae impedit dignissimos omnis, ipsa pariatur autem reiciendis distinctio? Laboriosam quam odio fugit officiis dolorum corporis, nihil cupiditate vel.</p>
+      <a href="#pCerrar">Cerrar</a>
+    </div>
+  </body>
+</html>
